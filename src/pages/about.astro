@@ -1,0 +1,41 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Icon } from "astro-icon/components";
+import MainCard from "@/components/MainCard.astro";
+import GitHubStats from "@/components/mdx/GitHubStats.astro";
+---
+
+<BaseLayout title="About">
+  <MainCard
+    title="About Crain"
+    description="Life is Fucking Movie!!!"
+    textOverlay="About"
+    infoIcon="lucide:user"
+  >
+    <div class="space-y-10 mb-8">
+      <!-- Profile Section -->
+      <section class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+        <div class="avatar">
+          <div
+            class="w-32 h-32 md:w-40 md:h-40 rounded-xl ring ring-primary ring-offset-base-100 ring-offset-2 overflow-hidden"
+          >
+            <img src="https://springsunday.net/bitbucket/网站头像.jpg" alt="SunMaple" width="160" height="160" loading="eager" />
+          </div>
+        </div>
+
+        <div class="flex-1 text-center md:text-left">
+          <h1 class="text-3xl md:text-4xl font-bold mb-2">向阳</h1>
+          <p class="text-xl text-base-content/80 mb-4">一次次点滴的记录，都是一场关于人生的重大总结！</p>
+            <br>
+          <p class="text-base-content/80">
+            公元二零二五年七月二十六日，此博客在借助人工智能的帮助下，大概有了雏形，还有许多的内容未完善，由于本人不是太懂相关的知识，所以仍需努力学习。
+            <br> 
+            <br> 
+            永远相信美好的事情即将发生！！
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </MainCard>
+</BaseLayout>
